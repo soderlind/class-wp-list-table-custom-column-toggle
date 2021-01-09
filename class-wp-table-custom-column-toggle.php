@@ -131,8 +131,8 @@ class WP_Table_Custom_Column_Toggle {
 		$file_path = __DIR__;
 		$url  = str_replace( $_SERVER['DOCUMENT_ROOT'], '', $file_path );
 
-		wp_enqueue_script( 'custom-column-toggle', $url . 'js/custom-column-toggle.js', [ 'jquery', 'jquery-effects-core' ], CUSTOM_COLUMN_TOGGLE_VERSION );
-		wp_enqueue_style( 'custom-column-toggle', $url . 'css/custom-column-toggle.css', [], CUSTOM_COLUMN_TOGGLE_VERSION );
+		wp_enqueue_script( 'custom-column-toggle', $url . '/js/custom-column-toggle.js', [ 'jquery', 'jquery-effects-core' ], CUSTOM_COLUMN_TOGGLE_VERSION );
+		wp_enqueue_style( 'custom-column-toggle', $url . '/css/custom-column-toggle.css', [], CUSTOM_COLUMN_TOGGLE_VERSION );
 		wp_localize_script(
 			'custom-column-toggle', 'customColumnToggle', [
 				'nonce'     => wp_create_nonce( $this->properties->column_id ),

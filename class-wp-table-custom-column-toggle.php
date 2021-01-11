@@ -2,7 +2,8 @@
 /**
  * Add a toggle column to WP_Table or its siblings.
  *
- * @author: Per Søderlind / DSS
+ * @package WP_Table_Custom_Column_Toggle
+ * @author: Per Søderlind
  * @since: 15/08/2018
  */
 
@@ -18,19 +19,9 @@ if ( class_exists( 'WP_Table_Custom_Column_Toggle' ) ) {
 class WP_Table_Custom_Column_Toggle {
 
 	/**
-	 * Default properties are:
-	 *    [
-	 *        'meta_key'        => 'column_meta_key',  // "toggle" for a single site is saved using post meta
-	 *        'column_id'       => 'column_id',
-	 *        'column_name'     => 'Column Toggle',
-	 *        'column_hooks'    => [
-	 *            'header'  => 'manage_page_posts_columns',
-	 *            'content' => 'manage_page_posts_custom_column',
-	 *        ],
-	 *        'use_siteoptions' => false,
-	 *    ]
+	 * Porperties.
 	 *
-	 * @var object
+	 * @var array
 	 */
 	private $properties;
 

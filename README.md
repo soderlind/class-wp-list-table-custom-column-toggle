@@ -1,8 +1,8 @@
 # WP_Table Custom Toggle Column
-Add a toggle column to WP_Table or its siblings.
+Add a toggle column to WP_List_Table or its siblings.
 
 ## Use
-`$toggled = \WP_Table_Custom_Column_Toggle::create( $propterties );`
+`$toggled = \WP_List_Table_Custom_Column_Toggle::create( $propterties );`
 
 Where default properties are:
 
@@ -24,7 +24,7 @@ Get toggled IDs using `$toggled->get_values();`
 Example, note use of column hooks:
 
 ```php
-$subsite_maintenance_sites = \WP_Table_Custom_Column_Toggle::create(
+$subsite_maintenance_sites = \WP_List_Table_Custom_Column_Toggle::create(
 	[
 		'column_id'       => 'subsite_maintenance',
 		'column_name'     => '<span class="dashicons dashicons-hammer"></span>',

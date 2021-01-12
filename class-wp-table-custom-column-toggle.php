@@ -1,6 +1,6 @@
 <?php
 /**
- * Add a toggle column to WP_Table or its siblings.
+ * Add a toggle column to WP_List_Table or its siblings.
  *
  * @package WP_Table_Custom_Column_Toggle
  * @author: Per Søderlind
@@ -9,14 +9,14 @@
 
 define( 'WP_TABLE_CUSTOM_COLUMN_TOGGLE_VERSION', '0.1.0' );
 
-if ( class_exists( 'WP_Table_Custom_Column_Toggle' ) ) {
+if ( class_exists( 'WP_List_Table_Custom_Column_Toggle' ) ) {
 	return;
 }
 
 /**
  * Class that adds a toggle column to WP_Table or its siblings.
  */
-class WP_Table_Custom_Column_Toggle {
+class WP_List_Table_Custom_Column_Toggle {
 
 	/**
 	 * Porperties.

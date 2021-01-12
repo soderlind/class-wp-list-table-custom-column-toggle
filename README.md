@@ -1,4 +1,4 @@
-# WP_List_Table Custom Toggle Column
+# class WP_List_Table_Custom_Toggle_Column
 Add a toggle column to WP_List_Table or its siblings.
 
 ## Use

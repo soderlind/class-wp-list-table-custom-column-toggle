@@ -1,5 +1,5 @@
 {
-	"name": "soderlind/class-wp-table-custom-column-toggle",
+	"name": "soderlind/class-wp-list-table-custom-column-toggle",
 	"type": "wordpress-dropin",
 	"license": "GPL-2.0-or-later",
 	"description": "Add a toggle column to WP_Table or its siblings.",
